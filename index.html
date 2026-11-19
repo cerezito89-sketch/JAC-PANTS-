@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- PANTALLA DE LOGIN -->
+    <div id="login">
+        <h1>Iniciar sesión</h1>
+
+        <form onsubmit="return validar()">
+
+            <label>Usuario:</label>
+            <input type="text" id="usuario">
+
+            <br><br>
+
+            <label>Contraseña:</label>
+            <input type="password" id="contrasena">
+
+            <br><br>
+
+            <input type="submit" value="Ingresar">
+
+        </form>
+    </div>
+
+    <!-- BIENVENIDA -->
+    <div id="bienvenida" style="display:none;">
+        <h1>Acceso correcto</h1>
+        <h2>Bienvenido al sistema CECyTEM</h2>
+        <p>Has iniciado sesión correctamente.</p>
+
+        <button onclick="entrar()">Entrar a JAC PANTS</button>
+    </div>
+
+    <!-- PAGINA JAC PANTS -->
+    <div id="tienda" style="display:none;">
+        <h1>JAC PANTS</h1>
+
+        <p>En nuestra tienda encontrarás tendencias de última moda.</p>
+        <p>Te invitamos a explorar nuestra amplia selección de prendas de vestir.</p>
+
+        <img src="https://tse4.mm.bing.net/th/id/OIP.6Fs0EUXLcRVqQAUSzlP4HwHaLH">
+
+        <img src="https://pantalonesdemezclilla.mx/cdn/shop/files/regular-baggy-jeans-desgastados-azul-mujer_3.jpg?v=1706035274&width=1445">
+
+        <img src="https://img.ltwebstatic.com/images3_pi/2022/12/19/1671428476bc54ed124bc73816fadbb2bee55f3058.jpg">
+
+        <p>Pantalones Baggy</p>
+        <input type="number" id="articulo1" placeholder="Cantidad">
+
+        <p>Pantalones Casuales</p>
+        <input type="number" id="articulo2" placeholder="Cantidad">
+
+        <p>Pants</p>
+        <input type="number" id="articulo3" placeholder="Cantidad">
+
+        <br><br>
+
+        <button onclick="comprar()">Calcular</button>
+
+        <h3 id="resultado"></h3>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
